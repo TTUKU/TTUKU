@@ -11,6 +11,10 @@
     {
       "name": "Game Node",
       "path": "game-node"
+    },
+    {
+      "name": "Root",
+      "path": "."
     }
   ]
 }
