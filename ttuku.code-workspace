@@ -2,15 +2,15 @@
   "folders": [
     {
       "name": "Client",
-      "path": "client"
+      "path": "apps/client"
     },
     {
       "name": "Server",
-      "path": "server"
+      "path": "apps/server"
     },
     {
       "name": "Game Node",
-      "path": "game-node"
+      "path": "apps/game-node"
     },
     {
       "name": "Root",
