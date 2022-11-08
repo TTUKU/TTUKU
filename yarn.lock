@@ -634,20 +634,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"client@workspace:apps/client":
-  version: 0.0.0-use.local
-  resolution: "client@workspace:apps/client"
-  dependencies:
-    "@types/react": ^18.0.22
-    "@types/react-dom": ^18.0.7
-    "@vitejs/plugin-react": ^2.2.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    typescript: ^4.6.4
-    vite: ^3.2.0
-  languageName: unknown
-  linkType: soft
-
 "color-convert@npm:^1.9.0":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
@@ -1036,6 +1022,12 @@ __metadata:
   checksum: b32fbaebb3f8ec4969f033073b43f5c8befbb58f1a79e12f1d7490358150359ebd92f49e72ff0144f65f2c48ea2a605bff2d07965f548f6474fd8efd95bf361a
   languageName: node
   linkType: hard
+
+"game-node@workspace:apps/game-node":
+  version: 0.0.0-use.local
+  resolution: "game-node@workspace:apps/game-node"
+  languageName: unknown
+  linkType: soft
 
 "gauge@npm:^4.0.3":
   version: 4.0.4
@@ -1714,6 +1706,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"server@workspace:apps/server":
+  version: 0.0.0-use.local
+  resolution: "server@workspace:apps/server"
+  languageName: unknown
+  linkType: soft
+
 "set-blocking@npm:^2.0.0":
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0"
@@ -1844,6 +1842,20 @@ __metadata:
   checksum: be2de62fe58ead94e3e592680052683b1ec986c72d589e7b21e5697f8744cdbf48c266fa72f6c15932894c10187b5f54573a3bcf7da0bfd964d5caf23d436168
   languageName: node
   linkType: hard
+
+"ttuku-client@workspace:apps/client":
+  version: 0.0.0-use.local
+  resolution: "ttuku-client@workspace:apps/client"
+  dependencies:
+    "@types/react": ^18.0.22
+    "@types/react-dom": ^18.0.7
+    "@vitejs/plugin-react": ^2.2.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^4.6.4
+    vite: ^3.2.0
+  languageName: unknown
+  linkType: soft
 
 "ttuku@workspace:.":
   version: 0.0.0-use.local
