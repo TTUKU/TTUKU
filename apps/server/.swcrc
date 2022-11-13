@@ -14,7 +14,10 @@
     "paths": {
       "~/*": ["./src/*"]
     },
-    "baseUrl": "."
+    "baseUrl": ".",
+    "experimental": {
+      "keepImportAssertions": true
+    }
   },
   "minify": true,
   "module": {
