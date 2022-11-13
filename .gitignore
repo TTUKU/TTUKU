@@ -12,3 +12,5 @@
 
 # turborepo / esbuild cache
 node_modules
+
+dist

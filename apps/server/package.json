@@ -1,5 +1,26 @@
 {
   "name": "server",
   "packageManager": "yarn@3.2.4",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.3.14",
+    "@types/lodash": "^4",
+    "@types/node": "^18.11.9",
+    "chokidar": "^3.5.3",
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4",
+    "typescript-transform-paths": "^3.4.4",
+    "zx": "^7.1.1"
+  },
+  "scripts": {
+    "build": "swc src -d dist",
+    "dev": "concurrently --handle-input \"swc src -d dist && nodemon dist/index.js\" \"swc src -d dist -w\""
+  },
+  "type": "module",
+  "dependencies": {
+    "fastify": "^4.9.2",
+    "lodash": "^4.17.21"
+  }
 }
