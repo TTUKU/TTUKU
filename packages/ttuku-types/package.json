@@ -1,0 +1,21 @@
+{
+  "name": "@ttuku/types",
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "ttypescript": "^1.5.13",
+    "typescript": "^4.8.4",
+    "typescript-transform-paths": "^3.4.4"
+  },
+  "scripts": {
+    "build": "ttsc",
+    "dev": "ttsc -w"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "typings": "./dist/index.d.ts",
+  "type": "module"
+}

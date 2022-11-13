@@ -20,6 +20,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@ttuku/types": "workspace:*",
     "fastify": "^4.9.2",
     "lodash": "^4.17.21"
   }
