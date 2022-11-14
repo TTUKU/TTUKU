@@ -4,7 +4,7 @@ export enum ServerStatus {
 }
 
 export interface Server {
-  domain: string
+  url: string
   name: string
   status: ServerStatus
 }
