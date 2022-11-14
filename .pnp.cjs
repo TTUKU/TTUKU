@@ -673,10 +673,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:af8aaead9c1ba4b2a97b423771e1f9e14f4dc528a26d6d37b8c9814259628780692ddf2efd4010928c519812cccf1f414b31b1ee9e85623172333c59f62b7662#npm:0.1.57", {\
-          "packageLocation": "./.yarn/__virtual__/@swc-cli-virtual-ca201ce396/0/cache/@swc-cli-npm-0.1.57-161586148e-d19f02233f.zip/node_modules/@swc/cli/",\
+        ["virtual:8e57a2efc631ec32be33c9109a84ca538b2f550d6763946e577f7460f0fec1ae805baaf9a330f8605e51139c236e5c9543bd2ee84d4e730f30f72dfdb0570b18#npm:0.1.57", {\
+          "packageLocation": "./.yarn/__virtual__/@swc-cli-virtual-2cc12c692f/0/cache/@swc-cli-npm-0.1.57-161586148e-d19f02233f.zip/node_modules/@swc/cli/",\
           "packageDependencies": [\
-            ["@swc/cli", "virtual:af8aaead9c1ba4b2a97b423771e1f9e14f4dc528a26d6d37b8c9814259628780692ddf2efd4010928c519812cccf1f414b31b1ee9e85623172333c59f62b7662#npm:0.1.57"],\
+            ["@swc/cli", "virtual:8e57a2efc631ec32be33c9109a84ca538b2f550d6763946e577f7460f0fec1ae805baaf9a330f8605e51139c236e5c9543bd2ee84d4e730f30f72dfdb0570b18#npm:0.1.57"],\
             ["@swc/core", "npm:1.3.14"],\
             ["@types/chokidar", null],\
             ["@types/swc__core", null],\
@@ -854,6 +854,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/ttuku-types/",\
           "packageDependencies": [\
             ["@ttuku/types", "workspace:packages/ttuku-types"],\
+            ["@types/node", "npm:18.11.9"],\
             ["ts-node", "virtual:9d0f8dfa562a5cd0519bde9d7b63e22afd83aef413aa8beade3cb553e885ff297e5cb4cd669c13e350a07b9aab6b446a849827d253f15be3df561a94f736d9e0#npm:10.9.1"],\
             ["ttypescript", "virtual:9d0f8dfa562a5cd0519bde9d7b63e22afd83aef413aa8beade3cb553e885ff297e5cb4cd669c13e350a07b9aab6b446a849827d253f15be3df561a94f736d9e0#npm:1.5.13"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
@@ -2161,7 +2162,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:apps/game-node", {\
           "packageLocation": "./apps/game-node/",\
           "packageDependencies": [\
-            ["game-node", "workspace:apps/game-node"]\
+            ["game-node", "workspace:apps/game-node"],\
+            ["@swc/cli", "virtual:8e57a2efc631ec32be33c9109a84ca538b2f550d6763946e577f7460f0fec1ae805baaf9a330f8605e51139c236e5c9543bd2ee84d4e730f30f72dfdb0570b18#npm:0.1.57"],\
+            ["@swc/core", "npm:1.3.14"],\
+            ["@ttuku/types", "workspace:packages/ttuku-types"],\
+            ["@types/lodash", "npm:4.14.188"],\
+            ["@types/node", "npm:18.11.9"],\
+            ["chokidar", "npm:3.5.3"],\
+            ["concurrently", "npm:7.5.0"],\
+            ["fastify", "npm:4.9.2"],\
+            ["lodash", "npm:4.17.21"],\
+            ["nodemon", "npm:2.0.20"],\
+            ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
+            ["typescript-transform-paths", "virtual:9d0f8dfa562a5cd0519bde9d7b63e22afd83aef413aa8beade3cb553e885ff297e5cb4cd669c13e350a07b9aab6b446a849827d253f15be3df561a94f736d9e0#npm:3.4.4"],\
+            ["zx", "npm:7.1.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -3480,7 +3494,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/server/",\
           "packageDependencies": [\
             ["server", "workspace:apps/server"],\
-            ["@swc/cli", "virtual:af8aaead9c1ba4b2a97b423771e1f9e14f4dc528a26d6d37b8c9814259628780692ddf2efd4010928c519812cccf1f414b31b1ee9e85623172333c59f62b7662#npm:0.1.57"],\
+            ["@swc/cli", "virtual:8e57a2efc631ec32be33c9109a84ca538b2f550d6763946e577f7460f0fec1ae805baaf9a330f8605e51139c236e5c9543bd2ee84d4e730f30f72dfdb0570b18#npm:0.1.57"],\
             ["@swc/core", "npm:1.3.14"],\
             ["@ttuku/types", "workspace:packages/ttuku-types"],\
             ["@types/lodash", "npm:4.14.188"],\
@@ -3843,7 +3857,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.11"],\
             ["@tsconfig/node14", "npm:1.0.3"],\
             ["@tsconfig/node16", "npm:1.0.3"],\
-            ["@types/node", null],\
+            ["@types/node", "npm:18.11.9"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
