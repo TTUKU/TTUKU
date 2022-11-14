@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true,
+      "dts": false,
+      "dynamicImport": true,
+      "tsx": false,
+      "importAssertions": true,
+      "noEarlyErrors": false
+    },
+    "target": "es2022",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "baseUrl": ".",
+    "experimental": {
+      "keepImportAssertions": true
+    }
+  },
+  "minify": true,
+  "module": {
+    "type": "es6"
+  }
+}
