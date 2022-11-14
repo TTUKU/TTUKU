@@ -9,6 +9,7 @@
     "@types/node": "^18.11.9",
     "chokidar": "^3.5.3",
     "concurrently": "^7.5.0",
+    "cross-env": "^7.0.3",
     "nodemon": "^2.0.20",
     "typescript": "^4.8.4",
     "typescript-transform-paths": "^3.4.4",
@@ -16,11 +17,13 @@
   },
   "scripts": {
     "build": "swc src -d dist",
-    "dev": "concurrently --handle-input \"swc src -d dist && nodemon dist/index.js\" \"swc src -d dist -w\""
+    "dev": "concurrently --handle-input \"swc src -d dist && yarn dev:server\" \"swc src -d dist -w\"",
+    "dev:server": "concurrently --handle-input \"cross-env PORT=3001 nodemon dist/index.js\" \"cross-env PORT=3002 nodemon dist/index.js\""
   },
   "type": "module",
   "dependencies": {
     "@ttuku/types": "workspace:*",
+    "dotenv": "^16.0.3",
     "fastify": "^4.9.2",
     "lodash": "^4.17.21"
   }

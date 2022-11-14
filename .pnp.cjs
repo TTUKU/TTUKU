@@ -1513,6 +1513,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["cross-env", [\
+        ["npm:7.0.3", {\
+          "packageLocation": "./.yarn/cache/cross-env-npm-7.0.3-96d81820f4-26f2f3ea2a.zip/node_modules/cross-env/",\
+          "packageDependencies": [\
+            ["cross-env", "npm:7.0.3"],\
+            ["cross-spawn", "npm:7.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cross-spawn", [\
+        ["npm:7.0.3", {\
+          "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.3-e4ff3e65b3-671cc7c728.zip/node_modules/cross-spawn/",\
+          "packageDependencies": [\
+            ["cross-spawn", "npm:7.0.3"],\
+            ["path-key", "npm:3.1.1"],\
+            ["shebang-command", "npm:2.0.0"],\
+            ["which", "npm:2.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["csstype", [\
         ["npm:3.1.1", {\
           "packageLocation": "./.yarn/cache/csstype-npm-3.1.1-3857baf48b-1f7b4f5fdd.zip/node_modules/csstype/",\
@@ -1617,6 +1639,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["dir-glob", "npm:3.0.1"],\
             ["path-type", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dotenv", [\
+        ["npm:16.0.3", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.3-4cc29121dc-afcf03f373.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2170,6 +2201,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.11.9"],\
             ["chokidar", "npm:3.5.3"],\
             ["concurrently", "npm:7.5.0"],\
+            ["cross-env", "npm:7.0.3"],\
+            ["dotenv", "npm:16.0.3"],\
             ["fastify", "npm:4.9.2"],\
             ["lodash", "npm:4.17.21"],\
             ["nodemon", "npm:2.0.20"],\
@@ -2996,6 +3029,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["path-key", [\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/path-key-npm-3.1.1-0e66ea8321-55cd7a9dd4.zip/node_modules/path-key/",\
+          "packageDependencies": [\
+            ["path-key", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["path-parse", [\
         ["npm:1.0.7", {\
           "packageLocation": "./.yarn/cache/path-parse-npm-1.0.7-09564527b7-49abf3d811.zip/node_modules/path-parse/",\
@@ -3525,6 +3567,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/set-cookie-parser-npm-2.5.1-530f8bd9ef-b99c37f976.zip/node_modules/set-cookie-parser/",\
           "packageDependencies": [\
             ["set-cookie-parser", "npm:2.5.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["shebang-command", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/shebang-command-npm-2.0.0-eb2b01921d-6b52fe8727.zip/node_modules/shebang-command/",\
+          "packageDependencies": [\
+            ["shebang-command", "npm:2.0.0"],\
+            ["shebang-regex", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["shebang-regex", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/shebang-regex-npm-3.0.0-899a0cd65e-1a2bcae50d.zip/node_modules/shebang-regex/",\
+          "packageDependencies": [\
+            ["shebang-regex", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
