@@ -507,6 +507,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@fastify/cors", [\
+        ["npm:8.2.0", {\
+          "packageLocation": "./.yarn/cache/@fastify-cors-npm-8.2.0-46fdadf32d-b2e30602d3.zip/node_modules/@fastify/cors/",\
+          "packageDependencies": [\
+            ["@fastify/cors", "npm:8.2.0"],\
+            ["fastify-plugin", "npm:4.3.0"],\
+            ["mnemonist", "npm:0.39.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@fastify/deepmerge", [\
         ["npm:1.1.0", {\
           "packageLocation": "./.yarn/cache/@fastify-deepmerge-npm-1.1.0-d1caf4a071-3e6839ef2a.zip/node_modules/@fastify/deepmerge/",\
@@ -531,6 +542,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@fastify/fast-json-stringify-compiler", "npm:4.1.0"],\
             ["fast-json-stringify", "npm:5.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@fastify/websocket", [\
+        ["npm:7.1.1", {\
+          "packageLocation": "./.yarn/cache/@fastify-websocket-npm-7.1.1-eb36795e2d-7afac35d6e.zip/node_modules/@fastify/websocket/",\
+          "packageDependencies": [\
+            ["@fastify/websocket", "npm:7.1.1"],\
+            ["fastify-plugin", "npm:4.3.0"],\
+            ["ws", "virtual:eb36795e2d31bad93e1c4091c2f05d884d33ea371890b456fc8b7737544c3555bc20ea2dbcff19a7d10c32c5a0ae31c7041aef2895bf70e8143c061774465323#npm:8.11.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -963,6 +985,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-which-npm-2.0.1-96352946a2-14e963f2ff.zip/node_modules/@types/which/",\
           "packageDependencies": [\
             ["@types/which", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/ws", [\
+        ["npm:8.5.3", {\
+          "packageLocation": "./.yarn/cache/@types-ws-npm-8.5.3-ae52c483f1-0ce46f850d.zip/node_modules/@types/ws/",\
+          "packageDependencies": [\
+            ["@types/ws", "npm:8.5.3"],\
+            ["@types/node", "npm:18.11.9"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2068,6 +2100,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["fastify-plugin", [\
+        ["npm:4.3.0", {\
+          "packageLocation": "./.yarn/cache/fastify-plugin-npm-4.3.0-2c18c7a9f4-f4831ca6de.zip/node_modules/fastify-plugin/",\
+          "packageDependencies": [\
+            ["fastify-plugin", "npm:4.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["fastq", [\
         ["npm:1.13.0", {\
           "packageLocation": "./.yarn/cache/fastq-npm-1.13.0-a45963881c-32cf15c29a.zip/node_modules/fastq/",\
@@ -2194,11 +2235,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/game-node/",\
           "packageDependencies": [\
             ["game-node", "workspace:apps/game-node"],\
+            ["@fastify/cors", "npm:8.2.0"],\
+            ["@fastify/websocket", "npm:7.1.1"],\
             ["@swc/cli", "virtual:8e57a2efc631ec32be33c9109a84ca538b2f550d6763946e577f7460f0fec1ae805baaf9a330f8605e51139c236e5c9543bd2ee84d4e730f30f72dfdb0570b18#npm:0.1.57"],\
             ["@swc/core", "npm:1.3.14"],\
             ["@ttuku/types", "workspace:packages/ttuku-types"],\
             ["@types/lodash", "npm:4.14.188"],\
             ["@types/node", "npm:18.11.9"],\
+            ["@types/ws", "npm:8.5.3"],\
             ["chokidar", "npm:3.5.3"],\
             ["concurrently", "npm:7.5.0"],\
             ["cross-env", "npm:7.0.3"],\
@@ -2849,6 +2893,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["mnemonist", [\
+        ["npm:0.39.5", {\
+          "packageLocation": "./.yarn/cache/mnemonist-npm-0.39.5-cbd4ee161e-6669d687a4.zip/node_modules/mnemonist/",\
+          "packageDependencies": [\
+            ["mnemonist", "npm:0.39.5"],\
+            ["obliterator", "npm:2.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ms", [\
         ["npm:2.1.2", {\
           "packageLocation": "./.yarn/cache/ms-npm-2.1.2-ec0c1512ff-673cdb2c31.zip/node_modules/ms/",\
@@ -2987,6 +3041,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["console-control-strings", "npm:1.1.0"],\
             ["gauge", "npm:4.0.4"],\
             ["set-blocking", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["obliterator", [\
+        ["npm:2.0.4", {\
+          "packageLocation": "./.yarn/cache/obliterator-npm-2.0.4-b21b355294-f28ad35b6d.zip/node_modules/obliterator/",\
+          "packageDependencies": [\
+            ["obliterator", "npm:2.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4289,6 +4352,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/wrappy-npm-1.0.2-916de4d4b3-159da4805f.zip/node_modules/wrappy/",\
           "packageDependencies": [\
             ["wrappy", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ws", [\
+        ["npm:8.11.0", {\
+          "packageLocation": "./.yarn/cache/ws-npm-8.11.0-ab72116a01-316b33aba3.zip/node_modules/ws/",\
+          "packageDependencies": [\
+            ["ws", "npm:8.11.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:eb36795e2d31bad93e1c4091c2f05d884d33ea371890b456fc8b7737544c3555bc20ea2dbcff19a7d10c32c5a0ae31c7041aef2895bf70e8143c061774465323#npm:8.11.0", {\
+          "packageLocation": "./.yarn/__virtual__/ws-virtual-cd671d925c/0/cache/ws-npm-8.11.0-ab72116a01-316b33aba3.zip/node_modules/ws/",\
+          "packageDependencies": [\
+            ["ws", "virtual:eb36795e2d31bad93e1c4091c2f05d884d33ea371890b456fc8b7737544c3555bc20ea2dbcff19a7d10c32c5a0ae31c7041aef2895bf70e8143c061774465323#npm:8.11.0"],\
+            ["@types/bufferutil", null],\
+            ["@types/utf-8-validate", null],\
+            ["bufferutil", null],\
+            ["utf-8-validate", null]\
+          ],\
+          "packagePeers": [\
+            "@types/bufferutil",\
+            "@types/utf-8-validate",\
+            "bufferutil",\
+            "utf-8-validate"\
           ],\
           "linkType": "HARD"\
         }]\
