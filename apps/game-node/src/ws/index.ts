@@ -19,7 +19,7 @@ import * as WebSocket from 'ws'
 import { Duplex, DuplexOptions, Readable } from 'stream'
 import { FastifyReply } from 'fastify/types/reply'
 import { RouteGenericInterface } from 'fastify/types/route'
-import { decodeAsync } from '@msgpack/msgpack'
+import { decodeAsync, decodeMultiStream } from '@msgpack/msgpack'
 
 //#region Types
 interface WebsocketRouteOptions<
@@ -193,21 +193,25 @@ export interface RouteOptions<
 //#endregion
 
 export const initWS: fastify.FastifyPluginAsync = async (server) => {
-  server.get('/', { websocket: true }, (conn, req) => {
-    conn.socket.on('message', async (msg) => {
-      try {
-        const read = new Readable()
+  server.get('/', { websocket: true }, async (conn, req) => {
+    console.log('New socket:', req.id)
 
-        read._read = () => {}
+    const stream = new Readable()
 
-        read.push(msg)
-        read.push(null)
+    stream._read = () => {}
 
-        console.log(await decodeAsync(read))
-      } catch (e) {
-        console.error(e)
-        conn.socket.close(1011, 'An internal error occurred.')
-      }
+    conn.socket.on('message', (msg) => {
+      stream.push(msg)
     })
+
+    conn.socket.on('close', () => {
+      stream.destroy()
+    })
+
+    for await (const item of decodeMultiStream(stream)) {
+      console.log(item)
+    }
+
+    console.log('Closed socket:', req.id)
   })
 }
