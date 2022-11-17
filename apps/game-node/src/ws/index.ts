@@ -193,8 +193,6 @@ export interface RouteOptions<
 
 export const initWS: fastify.FastifyPluginAsync = async (server) => {
   server.get('/', { websocket: true }, (conn, req) => {
-    console.log(`New socket:`, req.id)
-
     conn.socket.on('message', (msg) => {
       console.log(msg)
     })
