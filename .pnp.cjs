@@ -634,6 +634,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@msgpack/msgpack", [\
+        ["npm:2.8.0", {\
+          "packageLocation": "./.yarn/cache/@msgpack-msgpack-npm-2.8.0-c4768c71d4-bead9393f5.zip/node_modules/@msgpack/msgpack/",\
+          "packageDependencies": [\
+            ["@msgpack/msgpack", "npm:2.8.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@nodelib/fs.scandir", [\
         ["npm:2.1.5", {\
           "packageLocation": "./.yarn/cache/@nodelib-fs.scandir-npm-2.1.5-89c67370dd-a970d595bd.zip/node_modules/@nodelib/fs.scandir/",\
@@ -2237,6 +2246,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["game-node", "workspace:apps/game-node"],\
             ["@fastify/cors", "npm:8.2.0"],\
             ["@fastify/websocket", "npm:7.1.1"],\
+            ["@msgpack/msgpack", "npm:2.8.0"],\
             ["@swc/cli", "virtual:8e57a2efc631ec32be33c9109a84ca538b2f550d6763946e577f7460f0fec1ae805baaf9a330f8605e51139c236e5c9543bd2ee84d4e730f30f72dfdb0570b18#npm:0.1.57"],\
             ["@swc/core", "npm:1.3.14"],\
             ["@ttuku/types", "workspace:packages/ttuku-types"],\

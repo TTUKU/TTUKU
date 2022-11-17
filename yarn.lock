@@ -461,6 +461,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@msgpack/msgpack@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "@msgpack/msgpack@npm:2.8.0"
+  checksum: bead9393f57239007a2fe455df5277cbc03b125f14f310162a652b81471dcf3ab6780eaa24b36e20aa742998910a6840147d08b7267063b8e2de5d40c624360e
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1878,6 +1885,7 @@ __metadata:
   dependencies:
     "@fastify/cors": ^8.2.0
     "@fastify/websocket": ^7.1.1
+    "@msgpack/msgpack": ^2.8.0
     "@swc/cli": ^0.1.57
     "@swc/core": ^1.3.14
     "@ttuku/types": "workspace:*"

@@ -25,6 +25,7 @@
   "dependencies": {
     "@fastify/cors": "^8.2.0",
     "@fastify/websocket": "^7.1.1",
+    "@msgpack/msgpack": "^2.8.0",
     "@ttuku/types": "workspace:*",
     "dotenv": "^16.0.3",
     "fastify": "^4.9.2",
